@@ -1,5 +1,4 @@
 ---
-action: modifyJ.py
 jdbcName: MyJDBCProvider
 dbtype: DB2
 jdbcProviderType: DB2 Universal JDBC Driver Provider
@@ -10,4 +9,3 @@ scope: cell
 cellName: CELL_01
 nodeOrClusterName: " " 
 serverName: " "   
-
