@@ -5,7 +5,7 @@ dbtype: DB2
 jdbcProviderType: DB2 Universal JDBC Driver Provider
 implmenType: Connection pool data source
 classPath: ${ORACLE_JDBC_DRIVER_PATH}/ojdbc6.jar
-desc: My Test JDBC Provider Updated by Dhyan
+desc: My Test JDBC Provider Updated by Demo
 scope: cell
 cellName: CELL_01
 nodeOrClusterName: " " 
