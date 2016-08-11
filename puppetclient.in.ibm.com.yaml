@@ -4,9 +4,9 @@ dbtype: DB2
 jdbcProviderType: DB2 Universal JDBC Driver Provider
 implmenType: com.ibm.db2.jdbc.app.UDBConnectionPoolDataSource
 classPath: ${ORACLE_JDBC_DRIVER_PATH}/ojdbc6.jar
-desc: My Test JDBC Provider Updated by Demo 2
+desc: My Test JDBC Provider Updated by Demo 1
 scope: cell
 cellName: CELL_01
-nodeOrClusterName: " " 
-serverName: " "   
+nodeOrClusterName: appNode01 
+serverName: AppServer01  
 nativepath: Demo Heat 2
