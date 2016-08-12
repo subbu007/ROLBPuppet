@@ -1,12 +1,31 @@
+# Important values for JDBC Provider for WAS Configuration. This YAML file will be used by puppet master to setup the WAS Configuration.
+# Please refer "https://www.ibm.com/support/knowledgecenter/SSAW57_8.5.5/com.ibm.websphere.nd.doc/ae/tdat_ccrtprov.html" for more informations. 
 ---
-jdbcName: MyJDBCProviderServerScope
-dbtype: DB2
-jdbcProviderType: DB2 Universal JDBC Driver Provider
-implmenType: com.ibm.db2.jdbc.app.UDBConnectionPoolDataSource
-classPath: ${ORACLE_JDBC_DRIVER_PATH}/AfterDemo/ojdbc6.jar
-desc: My Test JDBC Provider After Demo
-scope: server
-cellName: CELL_01
-nodeOrClusterName: appNode01 
-serverName: AppServer01  
-nativepath: /native /AfterDemo
+# Select the scope at which applications can use the JDBC provider.
+# You can choose a cell, node, cluster, or server. 
+  scope: server   
+  cellName: CELL_01
+  nodeOrClusterName: appNode01 
+  serverName: AppServer01 
+
+# JDBC Provider Name
+  jdbcName: MyJDBCProviderServerScope                                              
+
+# Database type of the JDBC provider
+  dbtype: db2                      
+
+# Select your JDBC provider type                                 
+  jdbcProviderType: DB2 Universal JDBC Driver Provider
+
+# Select the implementation type that is necessary for your application.
+  implmenType: com.ibm.db2.jdbc.app.UDBConnectionPoolDataSource
+ 
+# Enter database class path information
+# Type the full path location of the database JDBC driver class files
+  classPath: ${ORACLE_JDBC_DRIVER_PATH}/AfterDemo/ojdbc6.jar
+
+# Description of your JDBC provider settings
+  desc: My Test JDBC Provider After Demo 
+
+# Native library path field to specify additional class files that your JDBC driver might require to function properly on your application server platform 
+  nativepath: /native /AfterDemo
