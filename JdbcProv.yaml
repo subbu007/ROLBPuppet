@@ -4,7 +4,7 @@
 # # Select the scope at which applications can use the JDBC provider.
 # # You can choose a cell, node, cluster, or server.
    id: JdbcProv
-   scope: cell
+   scope: node
    cellName: ubuntu-chef-node-01Cell
    nodeOrClusterName: ubuntu-chef-node-01Node
    serverName: nodeagent
