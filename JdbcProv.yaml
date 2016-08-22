@@ -13,20 +13,20 @@
    jdbcName: MyJDBCProviderCellScope04
 
 # Database type of the JDBC provider
-   dbtype: DB2
+   dbtype: SQL Server
 
 # Select your JDBC provider type
    jdbcProviderType: DB2 Universal JDBC Driver Provider
 
 # Select the implementation type that is necessary for your application.
-   implmenType: com.ibm.db2.jdbc.app.UDBConnectionPoolDataSource
+   implmenType: com.microsoft.sqlserver.jdbc.SQLServerConnectionPoolDataSource
 
 # Enter database class path information
 # Type the full path location of the database JDBC driver class files
-   classPath: ${ORACLE_JDBC_DRIVER_PATH}/beforeDemo/ojdbc6.jar
+   classPath: ${SQL_JDBC}/beforeDemo/ojdbc6.jar
 
 # Description of your JDBC provider settings
-   desc: My Test JDBC Provider after Demo 3
+   desc: My Test JDBC Provider before Demo 3
 
 # Native library path field to specify additional class files that your JDBC driver might require to function properly on your application server platform
-   nativepath: /native /afterDemo
+   nativepath: /native /beforeDemo
