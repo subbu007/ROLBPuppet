@@ -4,29 +4,29 @@
 # # Select the scope at which applications can use the JDBC provider.
 # # You can choose a cell, node, cluster, or server.
    id: JdbcProv
-   scope: node
+   scope: cell
    cellName: ubuntu-chef-node-01Cell
    nodeOrClusterName: ubuntu-chef-node-01Node
    serverName: nodeagent
 
 # JDBC Provider Name
-   jdbcName: MyJDBCProviderCellScope05
+   jdbcName: MyJDBCProviderCellScope01
 
 # Database type of the JDBC provider
-   dbtype: SQL Server
+   dbtype: DB2
 
 # Select your JDBC provider type
    jdbcProviderType: DB2 Universal JDBC Driver Provider
 
 # Select the implementation type that is necessary for your application.
-   implmenType: com.microsoft.sqlserver.jdbc.SQLServerConnectionPoolDataSource
+   implmenType: com.ibm.db2.jcc.DB2ConnectionPoolDataSource
 
 # Enter database class path information
 # Type the full path location of the database JDBC driver class files
    classPath: ${SQL_JDBC}/beforeDemo/ojdbc6.jar
 
 # Description of your JDBC provider settings
-   desc: My Test JDBC Provider before Demo 3
+   desc: My Test JDBC Provider before Demo
 
 # Native library path field to specify additional class files that your JDBC driver might require to function properly on your application server platform
-   nativepath: /native /beforeDemo1
+   nativepath: /native /beforeDemo
