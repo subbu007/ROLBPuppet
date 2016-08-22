@@ -10,7 +10,7 @@
    serverName: nodeagent
 
 # JDBC Provider Name
-   jdbcName: MyJDBCProviderCellScope03
+   jdbcName: MyJDBCProviderCellScope04
 
 # Database type of the JDBC provider
    dbtype: db2
