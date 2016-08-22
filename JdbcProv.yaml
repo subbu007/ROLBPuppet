@@ -13,7 +13,7 @@
    jdbcName: MyJDBCProviderCellScope04
 
 # Database type of the JDBC provider
-   dbtype: db2
+   dbtype: DB2
 
 # Select your JDBC provider type
    jdbcProviderType: DB2 Universal JDBC Driver Provider
