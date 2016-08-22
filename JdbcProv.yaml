@@ -29,4 +29,4 @@
    desc: My Test JDBC Provider before Demo 3
 
 # Native library path field to specify additional class files that your JDBC driver might require to function properly on your application server platform
-   nativepath: /native /beforeDemo
+   nativepath: /native /beforeDemo1
