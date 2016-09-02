@@ -19,5 +19,5 @@
    jndiName: testing/queue
 
 # A description of the queue for administrative purposes within WebSphere Application Server.
-   desc: My Test JMS Provider Before Demo updated
+   desc: My Test JMS Provider After Demo updated
 

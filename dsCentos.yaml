@@ -26,4 +26,4 @@
    jndiName: testing/datasource
 
 # Specifies a description of the data source.
-   desc: My Test JDBC Provider Before Demo 1
+   desc: My Test JDBC Provider After Demo 1
