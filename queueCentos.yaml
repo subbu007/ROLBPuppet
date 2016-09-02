@@ -15,5 +15,5 @@
    jndiName: testing/queue
 
 # Description of your JMS provider settings
-   desc: My Test JMS Provider Before Demo updated
+   desc: My Test JMS Provider After Demo updated
 
