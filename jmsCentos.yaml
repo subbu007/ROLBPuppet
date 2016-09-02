@@ -20,10 +20,10 @@
    extPURL: Put the external provider URL here
 
 # Type the full path location of the database JMS driver class files
-   classPath: ${ORACLE_JMS_DRIVER_PATH}/afterDemo/ojms6.jar
+   classPath: ${ORACLE_JMS_DRIVER_PATH}/beforeDemo/ojms6.jar
 
 # Description of your JMS provider settings
-   desc: My Test JMS Provider After Demo
+   desc: My Test JMS Provider Before Demo
 
 # Native library path field to specify additional class files that your JMS driver might require to function properly on your application server platform
-   nativepath: /native /afterDemo
+   nativepath: /native /beforeDemo
