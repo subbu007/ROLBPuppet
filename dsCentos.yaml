@@ -1,0 +1,29 @@
+# Important values for JDBC Provider for WAS Configuration. This YAML file will be used by puppet master to setup the WAS Configuration.
+# # Please refer "https://www.ibm.com/support/knowledgecenter/SSAW57_8.5.5/com.ibm.websphere.nd.doc/ae/tdat_ccrtprov.html" for more informations.
+---
+# # Select the scope at which applications can use the JDBC provider.
+# # You can choose a cell, node, cluster, or server.
+   id: dsCentos
+   scope: cell
+   cellName: rolbnodeCell
+   nodeOrClusterName: rolbnodeNode
+   serverName: ManagedAppServers
+
+# Specifies the name of the JDBC provider of interest.
+   JDBCProviderName: MyJDBCProviderCellScope
+
+# Specifies the name to assign to the new data source.
+   JdbcDataSourceName: MyDSCellScope
+
+# Specifies the category that can be used to classify or group the resource.
+   category: myCategory
+
+# Specifies the name of the DataStoreHelper implementation class that extends the capabilities of the implementation class of the JDBC driver.
+# The extended capabilities allow the JDBC drive to perform functions that are specific to the data.
+   datasourceHelperClassname: com.ibm.websphere.rsadapter.DB2DataStoreHelper 
+
+# Specifies the Java Naming and Directory Interface (JNDI) name for this data source.
+   jndiName: testing/datasource
+
+# Specifies a description of the data source.
+   desc: My Test JDBC Provider Before Demo 1

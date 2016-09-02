@@ -9,10 +9,14 @@
    nodeOrClusterName: rolbnodeNode
    serverName: ManagedAppServers
 
-# JMS Provider Name
+# You assign the name of JMS Provider Name
    jmsName: MyJMSProviderCellScope
 
+#The Java classname of the initial context factory for the JMS provider.
+#This property is only available for third-party messaging providers.
    extICF: Put the external initial context factory here
+
+#The JMS provider URL for external JNDI lookups.   
    extPURL: Put the external provider URL here
 
 # Type the full path location of the database JMS driver class files

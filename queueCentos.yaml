@@ -9,11 +9,15 @@
    nodeOrClusterName: rolbnodeNode
    serverName: ManagedAppServers
 
-# JMS Provider Name
+# The JMS provider assigned when the queue is created. 
    jmsProviderName: MyJMSProviderCellScope
+
+#The name by which the queue is known for administrative purposes within WebSphere Application Server.   
    queueName: MyQueueCellScope
+
+#The name that is used to bind the queue into the JNDI namespace.   
    jndiName: testing/queue
 
-# Description of your JMS provider settings
+# A description of the queue for administrative purposes within WebSphere Application Server.
    desc: My Test JMS Provider Before Demo updated
 
