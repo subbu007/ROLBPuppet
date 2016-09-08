@@ -23,7 +23,7 @@
    classPath: ${ORACLE_JMS_DRIVER_PATH}/afterDemo/ojms6.jar
 
 # Description of your JMS provider settings
-   desc: My Test JMS Provider After Demo
+   desc: My Test JMS Provider After Demo Testing 1
 
 # Native library path field to specify additional class files that your JMS driver might require to function properly on your application server platform
    nativepath: /native /afterDemo
