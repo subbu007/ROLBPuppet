@@ -38,19 +38,19 @@ jms_config_data.each do |identifier|
 
 execute "#$jmsProvName" do
         command "#$cmd"
-        action :nothing
+        action :run
 end
 
 
-git "/var/www/code_repo/temp3" do
-  repository "https://github.com/subbu007/ROLBPuppet.git"
-  revision node['last_version']
-  action :sync
-  notifies :create,"file[/var/www/code_repo/temp3/temp3.yaml]"
-end
+#git "/var/www/code_repo/temp3" do
+#  repository "https://github.com/subbu007/ROLBPuppet.git"
+#  revision node['last_version']
+#  action :sync
+#  notifies :create,"file[/var/www/code_repo/temp3/temp3.yaml]"
+#end
 
-file "/var/www/code_repo/temp3/temp3.yaml" do
-   content IO.read('/var/www/code_repo/temp3/jmsCentos.yaml')
-   mode "0644"   
-   notifies :run,"execute[#$jmsProvName]", :immediately
-end   
+#file "/var/www/code_repo/temp3/temp3.yaml" do
+#   content IO.read('/var/www/code_repo/temp3/jmsCentos.yaml')
+#   mode "0644"   
+#   notifies :run,"execute[#$jmsProvName]", :immediately
+#end   

@@ -38,19 +38,19 @@ queue_config_data.each do |identifier|
 
 execute "#$queueProvName" do
         command "#$cmd"
-        action :nothing
+        action :run
 end
 
 
-git "/var/www/code_repo/temp4" do
-  repository "https://github.com/subbu007/ROLBPuppet.git"
-  revision node['last_version']
-  action :sync
-  notifies :create,"file[/var/www/code_repo/temp4/temp4.yaml]"
-end
+#git "/var/www/code_repo/temp4" do
+#  repository "https://github.com/subbu007/ROLBPuppet.git"
+#  revision node['last_version']
+#  action :sync
+#  notifies :create,"file[/var/www/code_repo/temp4/temp4.yaml]"
+#end
 
-file "/var/www/code_repo/temp4/temp4.yaml" do
-   content IO.read('/var/www/code_repo/temp4/queueCentos.yaml')
-   mode "0644"   
-   notifies :run,"execute[#$queueProvName]", :immediately
-end 
+#file "/var/www/code_repo/temp4/temp4.yaml" do
+#   content IO.read('/var/www/code_repo/temp4/queueCentos.yaml')
+#   mode "0644"   
+#   notifies :run,"execute[#$queueProvName]", :immediately
+#end 

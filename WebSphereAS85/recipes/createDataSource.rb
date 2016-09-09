@@ -37,19 +37,19 @@ ds_config_data.each do |identifier|
 
 execute "#$JdbcDataSourceName" do
         command "#$cmd"
-        action :nothing
+        action :run
 end
 
 
-git "/var/www/code_repo/temp2" do
-  repository "https://github.com/subbu007/ROLBPuppet.git"
-  revision node['last_version']
-  action :sync
-  notifies :create,"file[/var/www/code_repo/temp2/temp2.yaml]", :immediately
-end
+#git "/var/www/code_repo/temp2" do
+#  repository "https://github.com/subbu007/ROLBPuppet.git"
+#  revision node['last_version']
+#  action :sync
+#  notifies :create,"file[/var/www/code_repo/temp2/temp2.yaml]", :immediately
+#end
 
-file "/var/www/code_repo/temp2/temp2.yaml" do
-   content IO.read('/var/www/code_repo/temp2/dsCentos.yaml')
-   mode "0644"   
-   notifies :run,"execute[#$JdbcDataSourceName]", :immediately
-end  
+#file "/var/www/code_repo/temp2/temp2.yaml" do
+#   content IO.read('/var/www/code_repo/temp2/dsCentos.yaml')
+#   mode "0644"   
+#   notifies :run,"execute[#$JdbcDataSourceName]", :immediately
+#end  

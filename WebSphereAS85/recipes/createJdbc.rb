@@ -40,19 +40,19 @@ was_config_data.each do |identifier|
 
 execute "#$jdbcProvName" do
         command "#$cmd"
-        action :nothing
+        action :run
 end
 
 
-git "/var/www/code_repo/temp" do
-  repository "https://github.com/subbu007/ROLBPuppet.git"
-  revision node['last_version']
-  action :sync
-  notifies :create,"file[/var/www/code_repo/temp/temp.yaml]"
-end
+#git "/var/www/code_repo/temp" do
+#  repository "https://github.com/subbu007/ROLBPuppet.git"
+#  revision node['last_version']
+#  action :sync
+#  notifies :create,"file[/var/www/code_repo/temp/temp.yaml]"
+#end
 
-file "/var/www/code_repo/temp/temp.yaml" do
-   content IO.read('/var/www/code_repo/temp/JdbcCentos.yaml')
-   mode "0644"   
-   notifies :run,"execute[#$jdbcProvName]", :immediately
-end     
+#file "/var/www/code_repo/temp/temp.yaml" do
+#   content IO.read('/var/www/code_repo/temp/JdbcCentos.yaml')
+#   mode "0644"   
+#   notifies :run,"execute[#$jdbcProvName]", :immediately
+#end     
