@@ -1,0 +1,6 @@
+name             'WebSphereAS85'
+maintainer       'Rohit Gabriel'
+maintainer_email 'rohit.phoenix@gmail.com'
+license          'Apache 2.0'
+description      'Installs/Configures WebSphere Application Server ND v8.5'
+version          '1.0.2'

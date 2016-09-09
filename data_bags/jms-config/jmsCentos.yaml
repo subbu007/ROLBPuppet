@@ -1,0 +1,29 @@
+# Important values for JMS Provider for WAS Configuration. This YAML file will be used by puppet master to setup the WAS Configuration.
+# # Please refer "https://www.ibm.com/support/knowledgecenter/SSAW57_8.5.5/com.ibm.websphere.nd.doc/ae/tdat_ccrtprov.html" for more informations.
+---
+# # Select the scope at which applications can use the JMS provider.
+# # You can choose a cell, node, cluster, or server.
+   id: jmsCentos
+   scope: cell
+   cellName: rolbnodeCell
+   nodeOrClusterName: rolbnodeNode
+   serverName: ManagedAppServers
+
+# You assign the name of JMS Provider Name
+   jmsName: MyJMSProviderCellScope
+
+#The Java classname of the initial context factory for the JMS provider.
+#This property is only available for third-party messaging providers.
+   extICF: Put the external initial context factory here
+
+#The JMS provider URL for external JNDI lookups.   
+   extPURL: Put the external provider URL here
+
+# Type the full path location of the database JMS driver class files
+   classPath: ${ORACLE_JMS_DRIVER_PATH}/afterDemo/ojms6.jar
+
+# Description of your JMS provider settings
+   desc: My Test JMS Provider After Demo
+
+# Native library path field to specify additional class files that your JMS driver might require to function properly on your application server platform
+   nativepath: /native /afterDemo

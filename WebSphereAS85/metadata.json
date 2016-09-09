@@ -1,0 +1,51 @@
+{
+  "name": "WebSphereAS85",
+  "description": "Installs/Configures WebSphere Application Server ND v8.5",
+  "long_description": "",
+  "maintainer": "Rohit Gabriel",
+  "maintainer_email": "rohit.phoenix@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "1.0.2",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

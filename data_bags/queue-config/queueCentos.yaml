@@ -1,0 +1,23 @@
+# Important values for JMS Provider for WAS Configuration. This YAML file will be used by puppet master to setup the WAS Configuration.
+# # Please refer "https://www.ibm.com/support/knowledgecenter/SSAW57_8.5.5/com.ibm.websphere.nd.doc/ae/tdat_ccrtprov.html" for more informations.
+---
+# # Select the scope at which applications can use the JMS provider.
+# # You can choose a cell, node, cluster, or server.
+   id: queueCentos
+   scope: cell
+   cellName: rolbnodeCell
+   nodeOrClusterName: rolbnodeNode
+   serverName: ManagedAppServers
+
+# The JMS provider assigned when the queue is created. 
+   jmsProviderName: MyJMSProviderCellScope
+
+#The name by which the queue is known for administrative purposes within WebSphere Application Server.   
+   queueName: MyQueueCellScope
+
+#The name that is used to bind the queue into the JNDI namespace.   
+   jndiName: testing/queue
+
+# A description of the queue for administrative purposes within WebSphere Application Server.
+   desc: My Test JMS Provider Before Demo updated
+
