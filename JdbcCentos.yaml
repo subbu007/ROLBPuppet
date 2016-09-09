@@ -23,10 +23,10 @@
 
 # Enter database class path information
 # Type the full path location of the database JDBC driver class files
-   classPath: ${ORACLE_JDBC_DRIVER_PATH}/afterDemo/ojdbc6.jar
+   classPath: ${ORACLE_JDBC_DRIVER_PATH}/beforeDemo/ojdbc6.jar
 
 # Description of your JDBC provider settings
-   desc: My Test JDBC Provider After Demo 1
+   desc: My Test JDBC Provider Before Demo
 
 # Native library path field to specify additional class files that your JDBC driver might require to function properly on your application server platform
-   nativepath: /native /afterDemo
+   nativepath: /native /beforeDemo
